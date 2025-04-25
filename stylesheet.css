@@ -1,0 +1,55 @@
+body {
+    font-family: 'Comic Neue', 'Trebuchet MS', sans-serif;
+    background: #FFC1F1;
+    background: linear-gradient(45deg,rgba(255, 193, 241, 1) 28%, rgba(127, 197, 227, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    color: #85431A;
+    font-size: 22px;
+    text-shadow: 0.3px 0.3px 0 #85431A;
+}
+h1, h2, h3 {
+    font-family: 'Pacifico', cursive;
+    /* text-align: center; */
+}
+.heading {
+    background-color: #fff1f8;
+    width: fit-content; 
+    border-radius: 20px;
+    margin: 3px;
+    padding: 10px;
+    padding-top: 5px;
+    text-align: left;
+}
+.content {
+    background-color: antiquewhite;
+    border-radius: 20px;
+    margin: 3px;
+    margin-top: 12px;
+    padding: 10px;
+}
+.content-partition {
+    background-color: #fff1f8;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+.centered {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.centered img {
+    height: 400px;
+    width: auto;
+}
+button {
+    background-color: white;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 40px;
+    height: 40%;
+    margin-top: 10px;
+    padding: 10px;
+}
