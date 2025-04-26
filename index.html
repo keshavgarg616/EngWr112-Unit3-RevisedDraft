@@ -39,14 +39,34 @@
     <video id="myAudio" muted autoplay loop playsinline style="display:none;">
         <source src="https://keshavgarg616.github.io/EngWr112-Unit3-RevisedDraft/bg.mp3" type="audio/mp3">
     </video>
+
+    <!-- Enable Sound Button -->
+    <button id="enableSoundBtn" style="
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 1000;
+    ">
+        🎵 Enable Sound
+    </button>
+
     <script>
-    function startMusic() {
         const audio = document.getElementById("myAudio");
-        audio.muted = false;
-        audio.volume = 0.1;
-        audio.play();
-        document.body.onclick = null; // Disable further clicks needed
-    }
+        const enableSoundBtn = document.getElementById("enableSoundBtn");
+
+        enableSoundBtn.addEventListener('click', function() {
+            audio.muted = false;         // Unmute
+            audio.volume = 0.1;           // Set volume
+            audio.play();                 // Play the audio
+            enableSoundBtn.style.display = 'none'; // Hide the button
+        });
     </script>
     </div>
     </BODY>
