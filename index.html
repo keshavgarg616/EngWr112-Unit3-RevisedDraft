@@ -35,23 +35,19 @@
         <p>
             TODO - voiceover
         </p>
-        <video id="myAudio" autoplay muted loop playsinline style="display:none;">
-    <source src="https://keshavgarg616.github.io/EngWr112-Unit3-RevisedDraft/bg.mp3" type="audio/mp3">
-</video>
-
-<script>
-    const audio = document.getElementById("myAudio");
-
-// TRY forcing it to play manually after the page loads
-    window.addEventListener('load', function() {
+        <body onclick="startMusic()">
+    <video id="myAudio" muted autoplay loop playsinline style="display:none;">
+        <source src="https://keshavgarg616.github.io/EngWr112-Unit3-RevisedDraft/bg.mp3" type="audio/mp3">
+    </video>
+    <script>
+    function startMusic() {
+        const audio = document.getElementById("myAudio");
+        audio.muted = false;
         audio.volume = 0.1;
-        audio.muted = false; // Unmute
-        audio.play().catch(function(error) {
-            console.log('Autoplay was prevented:', error);
-        });
-    });
-</script>
-
+        audio.play();
+        document.body.onclick = null; // Disable further clicks needed
+    }
+    </script>
     </div>
     </BODY>
 </HTML>
