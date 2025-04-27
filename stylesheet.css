@@ -53,7 +53,7 @@ button {
     margin-top: 10px;
     padding: 10px;
 }
-sound-button {
+.sound-button {
     background-color: white;
     border: none;
     font-size: 1.2em;
