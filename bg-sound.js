@@ -9,7 +9,7 @@ let soundEnabled = false;
 enableSoundBtn.addEventListener('click', function () {
     if (!soundEnabled) {
         audio.muted = false;
-        audio.volume = 0.1;
+        audio.volume = 0.5;
         // enableSoundBtn.style.opacity = '0.5';
         enableSoundBtn.innerHTML = '🔇';
     } else {
