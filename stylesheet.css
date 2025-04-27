@@ -53,3 +53,18 @@ button {
     margin-top: 10px;
     padding: 10px;
 }
+button {
+    background-color: white;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 40px;
+    height: 40%;
+    margin-top: 10px;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px; 
+    height: fit-content; 
+    width: fit-content; 
+    transition: opacity 0.05s ease;
+}

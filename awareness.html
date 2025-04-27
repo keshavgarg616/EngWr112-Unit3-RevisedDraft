@@ -15,11 +15,11 @@
             For example, when we're walking through a retro video game store, we might want to buy our childhood console or game even when we might have a console that supports that game already. If it is an expensive purchase, knowing that we're being nostalgia is the one making the decision for us can help us to make the choice that is best for both us and our finances.
         </p>
         <a href="https://www.nextpit.com/nintendo-wii-retro-console-test" target="_blank"><img class="centered" src="https://fs.npstatic.com/userfiles/7761290/image/Nintendo-Wii/wii_test_header-w1400h1050.jpg" style="width: 600px;" /></a>
-        <audio id="myAudio" src="bg.mp3" autoplay loop="true" />
-        <script>
-            const audio = document.getElementById("myAudio");
-            audio.volume = 0.1; // Volume from 0.0 to 1.0
-        </script>
+        <video id="myAudio" muted autoplay loop playsinline style="display:none;">
+            <source src="https://keshavgarg616.github.io/EngWr112-Unit3-RevisedDraft/bg.mp3" type="audio/mp3">
+        </video>
+        <button id="enableSoundBtn" class="sound-button">🎵</button>
+        <script src="bg-sound.js"></script>    
     </div>
         <form action="index.html">
             <button type="submit">Home Page</submit>

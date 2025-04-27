@@ -17,11 +17,11 @@
             This effect can be linked to selectively recalling memories as a way to escape from the present to the good old days with no stress and no worries where everything seems perfect.
         </p>
         <a href="https://web.colby.edu/cogblog/2022/04/25/pov-you-are-in-2022-nostalgic-rosy-retrospection-in-the-time-of-covid-19/" target="_blank"><img class="centered" src="https://web.colby.edu/cogblog/files/2022/04/32507_custom.jpeg" /></a>
-        <audio id="myAudio" src="bg.mp3" autoplay loop="true" />
-        <script>
-            const audio = document.getElementById("myAudio");
-            audio.volume = 0.1; // Volume from 0.0 to 1.0
-        </script>
+        <video id="myAudio" muted autoplay loop playsinline style="display:none;">
+            <source src="https://keshavgarg616.github.io/EngWr112-Unit3-RevisedDraft/bg.mp3" type="audio/mp3">
+        </video>
+        <button id="enableSoundBtn" class="sound-button">🎵</button>
+        <script src="bg-sound.js"></script>    
     </div>
     <form action="index.html">
         <button type="submit">Home Page</submit>
